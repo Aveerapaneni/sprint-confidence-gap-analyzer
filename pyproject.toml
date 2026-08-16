@@ -1,0 +1,9 @@
+[project]
+name = "sprint-confidence-gap-analyzer"
+version = "0.1.0"
+description = "PR-derived confidence signals rolled up into per-card, feature, team, and Program-level status."
+requires-python = ">=3.9"
+dependencies = []
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
