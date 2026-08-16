@@ -87,11 +87,37 @@ dataset (not just synthetic fixtures) so the whole pipeline — data loading thr
 card/team/program/feature status — is verified against the actual scenario the mock
 data was designed around.
 
+## Dashboard
+
+[`dashboard/confidence-gap-dashboard.html`](dashboard/confidence-gap-dashboard.html) is a
+self-contained, single-file dashboard view of the same report the CLI prints — open it
+directly in a browser, no server or build step required. It's evaluated 2 days before
+sprint close (matching the PRD's own "2-3 days before sprint close" framing) and answers
+the tool's core question visually: of the cards marked "In Progress" on the board, how
+many actually carry a Red or Amber signal underneath?
+
+It covers Program status, a per-team breakdown with each at-risk card's PR size and
+specific reasons, and a full board-status-vs-signal comparison table for every card.
+
+The page's data is a static snapshot, embedded at build time — not live. To refresh it
+after a mock data change:
+
+```bash
+python3 dashboard/generate_data.py   # rewrites dashboard/dashboard_data.json
+```
+
+then paste the (minified) output into the `<script id="dashboard-data" type="application/json">`
+block in `confidence-gap-dashboard.html`.
+
 ## Project structure
 
 ```
 sprint-confidence-gap-analyzer/
 ├── data/                       # copied from pm-portfolio-mock-data (see above)
+├── dashboard/
+│   ├── confidence-gap-dashboard.html  # self-contained dashboard (see below)
+│   ├── dashboard_data.json            # data snapshot embedded in the page above
+│   └── generate_data.py               # rebuilds dashboard_data.json from the report pipeline
 ├── src/sprint_confidence/
 │   ├── models.py                # Team, Sprint, Card, Feature, PR, Reviewer, Risk
 │   ├── config.py                # all configurable thresholds, with documented defaults
