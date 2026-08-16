@@ -1,0 +1,28 @@
+{
+  "teams": [
+    {
+      "team_id": "team_alpha",
+      "team_name": "Team Alpha",
+      "velocity": 32,
+      "product_owner": "Dana Lee",
+      "engineers": ["Jordan Kim", "Sam Patel"],
+      "active_sprint_id": "sprint_12"
+    },
+    {
+      "team_id": "team_bravo",
+      "team_name": "Team Bravo",
+      "velocity": 24,
+      "product_owner": "Marcus Cho",
+      "engineers": ["Riley Chen", "Morgan Diaz"],
+      "active_sprint_id": "sprint_09"
+    },
+    {
+      "team_id": "team_charlie",
+      "team_name": "Team Charlie",
+      "velocity": 18,
+      "product_owner": "Priya Nair",
+      "engineers": ["Taylor Singh", "Casey Wong"],
+      "active_sprint_id": "sprint_15"
+    }
+  ]
+}

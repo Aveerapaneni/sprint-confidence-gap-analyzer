@@ -1,0 +1,158 @@
+{
+  "sprints": [
+    {
+      "sprint_id": "sprint_12",
+      "team_id": "team_alpha",
+      "status": "active",
+      "start_date": "2026-07-28",
+      "end_date": "2026-08-11",
+      "sprint_goal": "Ship the account-settings redesign and finish payment-retry logic"
+    },
+    {
+      "sprint_id": "sprint_09",
+      "team_id": "team_bravo",
+      "status": "active",
+      "start_date": "2026-07-28",
+      "end_date": "2026-08-11",
+      "sprint_goal": "Stabilize the notifications service and reduce P1 bug backlog"
+    },
+    {
+      "sprint_id": "sprint_15",
+      "team_id": "team_charlie",
+      "status": "active",
+      "start_date": "2026-07-28",
+      "end_date": "2026-08-11",
+      "sprint_goal": "Migrate reporting dashboard to the new data pipeline"
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ALPHA-201",
+      "team_id": "team_alpha",
+      "sprint_id": "sprint_12",
+      "title": "Rebuild account-settings UI",
+      "priority": "high",
+      "story_points": 8,
+      "status": "done",
+      "linked_pr_id": null,
+      "linked_risk_ids": [],
+      "feature_id": "FEAT-01"
+    },
+    {
+      "card_id": "ALPHA-202",
+      "team_id": "team_alpha",
+      "sprint_id": "sprint_12",
+      "title": "Payment retry queue logic",
+      "priority": "high",
+      "story_points": 13,
+      "status": "in_progress",
+      "linked_pr_id": "PR-1001",
+      "linked_risk_ids": [],
+      "feature_id": "FEAT-02"
+    },
+    {
+      "card_id": "ALPHA-203",
+      "team_id": "team_alpha",
+      "sprint_id": "sprint_12",
+      "title": "Fix avatar upload bug",
+      "priority": "medium",
+      "story_points": 3,
+      "status": "done",
+      "linked_pr_id": null,
+      "linked_risk_ids": [],
+      "feature_id": "FEAT-01"
+    },
+    {
+      "card_id": "ALPHA-204",
+      "team_id": "team_alpha",
+      "sprint_id": "sprint_12",
+      "title": "Add SSO login option",
+      "priority": "high",
+      "story_points": 8,
+      "status": "in_progress",
+      "linked_pr_id": null,
+      "linked_risk_ids": [
+        "R-001"
+      ],
+      "feature_id": "FEAT-01"
+    },
+    {
+      "card_id": "BRAVO-101",
+      "team_id": "team_bravo",
+      "sprint_id": "sprint_09",
+      "title": "Fix duplicate push notifications",
+      "priority": "high",
+      "story_points": 5,
+      "status": "done",
+      "linked_pr_id": null,
+      "linked_risk_ids": [],
+      "feature_id": "FEAT-03"
+    },
+    {
+      "card_id": "BRAVO-102",
+      "team_id": "team_bravo",
+      "sprint_id": "sprint_09",
+      "title": "Notification service memory leak",
+      "priority": "high",
+      "story_points": 8,
+      "status": "in_progress",
+      "linked_pr_id": "PR-1002",
+      "linked_risk_ids": [
+        "I-003"
+      ],
+      "feature_id": "FEAT-03"
+    },
+    {
+      "card_id": "BRAVO-103",
+      "team_id": "team_bravo",
+      "sprint_id": "sprint_09",
+      "title": "Email digest formatting bug",
+      "priority": "medium",
+      "story_points": 3,
+      "status": "in_progress",
+      "linked_pr_id": "PR-1003",
+      "linked_risk_ids": [],
+      "feature_id": "FEAT-03"
+    },
+    {
+      "card_id": "BRAVO-104",
+      "team_id": "team_bravo",
+      "sprint_id": "sprint_09",
+      "title": "Add SMS notification channel",
+      "priority": "high",
+      "story_points": 8,
+      "status": "in_progress",
+      "linked_pr_id": null,
+      "linked_risk_ids": [
+        "A-002"
+      ],
+      "feature_id": "FEAT-03"
+    },
+    {
+      "card_id": "CHAR-301",
+      "team_id": "team_charlie",
+      "sprint_id": "sprint_15",
+      "title": "Connect dashboard to new pipeline",
+      "priority": "high",
+      "story_points": 8,
+      "status": "in_progress",
+      "linked_pr_id": "PR-1004",
+      "linked_risk_ids": [
+        "D-004"
+      ],
+      "feature_id": "FEAT-04"
+    },
+    {
+      "card_id": "CHAR-302",
+      "team_id": "team_charlie",
+      "sprint_id": "sprint_15",
+      "title": "Deprecate legacy reporting job",
+      "priority": "medium",
+      "story_points": 5,
+      "status": "done",
+      "linked_pr_id": null,
+      "linked_risk_ids": [],
+      "feature_id": "FEAT-04"
+    }
+  ]
+}

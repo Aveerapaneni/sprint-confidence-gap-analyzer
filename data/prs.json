@@ -1,0 +1,92 @@
+{
+  "pull_requests": [
+    {
+      "pr_id": "PR-1001",
+      "linked_card_id": "ALPHA-202",
+      "state": "Open",
+      "created_date": "2026-08-05",
+      "last_updated_date": "2026-08-09",
+      "merged_date": null,
+      "lines_added": 480,
+      "lines_deleted": 140,
+      "files_changed": 14,
+      "reviewers": [
+        { "reviewer_name": "Jordan Kim", "review_status": "Approved", "last_action_date": "2026-08-07" },
+        { "reviewer_name": "Sam Patel", "review_status": "Changes Requested", "last_action_date": "2026-08-08" }
+      ],
+      "required_approvals": 2,
+      "round2_lines": 180,
+      "round2_files": 5,
+      "mergeable": true,
+      "mergeable_state": "clean",
+      "ci_checks_status": "pass",
+      "sonarqube_coverage_pct": 88,
+      "sonarqube_quality_gate": "fail"
+    },
+    {
+      "pr_id": "PR-1002",
+      "linked_card_id": "BRAVO-102",
+      "state": "Draft",
+      "created_date": "2026-08-08",
+      "last_updated_date": "2026-08-09",
+      "merged_date": null,
+      "lines_added": 65,
+      "lines_deleted": 15,
+      "files_changed": 3,
+      "reviewers": [],
+      "required_approvals": 2,
+      "round2_lines": null,
+      "round2_files": null,
+      "mergeable": true,
+      "mergeable_state": "clean",
+      "ci_checks_status": "pending",
+      "sonarqube_coverage_pct": 95,
+      "sonarqube_quality_gate": "pass"
+    },
+    {
+      "pr_id": "PR-1003",
+      "linked_card_id": "BRAVO-103",
+      "state": "Merged",
+      "created_date": "2026-08-03",
+      "last_updated_date": "2026-08-06",
+      "merged_date": "2026-08-06",
+      "lines_added": 40,
+      "lines_deleted": 12,
+      "files_changed": 2,
+      "reviewers": [
+        { "reviewer_name": "Riley Chen", "review_status": "Approved", "last_action_date": "2026-08-05" },
+        { "reviewer_name": "Morgan Diaz", "review_status": "Approved", "last_action_date": "2026-08-06" }
+      ],
+      "required_approvals": 2,
+      "round2_lines": 0,
+      "round2_files": 0,
+      "mergeable": true,
+      "mergeable_state": "clean",
+      "ci_checks_status": "pass",
+      "sonarqube_coverage_pct": 97,
+      "sonarqube_quality_gate": "pass"
+    },
+    {
+      "pr_id": "PR-1004",
+      "linked_card_id": "CHAR-301",
+      "state": "Open",
+      "created_date": "2026-08-04",
+      "last_updated_date": "2026-08-05",
+      "merged_date": null,
+      "lines_added": 260,
+      "lines_deleted": 90,
+      "files_changed": 7,
+      "reviewers": [
+        { "reviewer_name": "Taylor Singh", "review_status": "Pending", "last_action_date": "2026-08-05" }
+      ],
+      "required_approvals": 1,
+      "round2_lines": null,
+      "round2_files": null,
+      "mergeable": false,
+      "mergeable_state": "dirty",
+      "ci_checks_status": "fail",
+      "sonarqube_coverage_pct": 91,
+      "sonarqube_quality_gate": "pass"
+    }
+  ]
+}

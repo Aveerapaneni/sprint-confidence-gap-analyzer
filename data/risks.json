@@ -1,0 +1,44 @@
+{
+  "risks": [
+    {
+      "risk_id": "R-001",
+      "category": "Risk",
+      "description": "Vendor may not deliver API access before sprint 12 start",
+      "owner": "Dana Lee",
+      "probability": 3,
+      "impact": 4,
+      "status": "Monitoring",
+      "linked_card_id": "ALPHA-204"
+    },
+    {
+      "risk_id": "A-002",
+      "category": "Assumption",
+      "description": "Assuming Team Bravo's test environment will be ready by sprint start",
+      "owner": "Marcus Cho",
+      "probability": 2,
+      "impact": 3,
+      "status": "Open",
+      "linked_card_id": "BRAVO-104"
+    },
+    {
+      "risk_id": "I-003",
+      "category": "Issue",
+      "description": "Notification service memory leak causing intermittent outages",
+      "owner": "Marcus Cho",
+      "probability": null,
+      "impact": 5,
+      "status": "Escalated",
+      "linked_card_id": "BRAVO-102"
+    },
+    {
+      "risk_id": "D-004",
+      "category": "Dependency",
+      "description": "Reporting dashboard migration depends on Data Platform team's pipeline API",
+      "owner": "Priya Nair",
+      "probability": 2,
+      "impact": 4,
+      "status": "Open",
+      "linked_card_id": "CHAR-301"
+    }
+  ]
+}

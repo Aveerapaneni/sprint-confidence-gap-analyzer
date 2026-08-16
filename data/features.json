@@ -1,0 +1,36 @@
+{
+  "features": [
+    {
+      "feature_id": "FEAT-01",
+      "feature_name": "Account Settings & SSO",
+      "description": "Rebuild the account-settings experience and add SSO login as an authentication option.",
+      "owner": "Dana Lee",
+      "linked_team_ids": ["team_alpha"],
+      "linked_card_ids": ["ALPHA-201", "ALPHA-203", "ALPHA-204"]
+    },
+    {
+      "feature_id": "FEAT-02",
+      "feature_name": "Payment Reliability",
+      "description": "Harden payment processing with retry logic to reduce failed-transaction support tickets.",
+      "owner": "Dana Lee",
+      "linked_team_ids": ["team_alpha"],
+      "linked_card_ids": ["ALPHA-202"]
+    },
+    {
+      "feature_id": "FEAT-03",
+      "feature_name": "Notifications Reliability",
+      "description": "Fix outstanding notification delivery bugs and add SMS as a new notification channel.",
+      "owner": "Marcus Cho",
+      "linked_team_ids": ["team_bravo"],
+      "linked_card_ids": ["BRAVO-101", "BRAVO-102", "BRAVO-103", "BRAVO-104"]
+    },
+    {
+      "feature_id": "FEAT-04",
+      "feature_name": "Reporting & Data Pipeline Migration",
+      "description": "Migrate the reporting dashboard onto the new data pipeline and retire the legacy reporting job.",
+      "owner": "Priya Nair",
+      "linked_team_ids": ["team_charlie"],
+      "linked_card_ids": ["CHAR-301", "CHAR-302"]
+    }
+  ]
+}
