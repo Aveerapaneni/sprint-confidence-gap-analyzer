@@ -1,0 +1,352 @@
+{
+  "as_of": "2026-08-09",
+  "active_sprint_id_by_team": {
+    "team_alpha": "sprint_12",
+    "team_bravo": "sprint_09",
+    "team_charlie": "sprint_15"
+  },
+  "excluded_teams": [],
+  "program": {
+    "status": "Red",
+    "reasons": [
+      "Team Alpha is Red: ALPHA-202",
+      "Team Bravo is Red: BRAVO-102",
+      "Team Charlie is Red: CHAR-301"
+    ]
+  },
+  "teams": [
+    {
+      "team_id": "team_alpha",
+      "team_name": "Team Alpha",
+      "status": "Red",
+      "counts": {
+        "Red": 1,
+        "Amber": 1,
+        "Green": 2
+      },
+      "sprint_id": "sprint_12",
+      "sprint_goal": "Ship the account-settings redesign and finish payment-retry logic",
+      "sprint_start": "2026-07-28",
+      "sprint_end": "2026-08-11",
+      "velocity": 32,
+      "at_risk_cards": [
+        {
+          "card_id": "ALPHA-202",
+          "title": "Payment retry queue logic",
+          "status": "Red",
+          "reasons": [
+            "Quality gate failed: 88% coverage, threshold 90%",
+            "Changes requested by a reviewer \u2014 PR blocked pending rework",
+            "PR updated on 2026-08-09 after the most recent approval on 2026-08-07 \u2014 needs re-review"
+          ]
+        },
+        {
+          "card_id": "ALPHA-204",
+          "title": "Add SSO login option",
+          "status": "Amber",
+          "reasons": [
+            "No linked PR yet \u2014 work not started",
+            "Active Medium-priority Risk: Vendor may not deliver API access before sprint 12 start (R-001)"
+          ]
+        }
+      ]
+    },
+    {
+      "team_id": "team_bravo",
+      "team_name": "Team Bravo",
+      "status": "Red",
+      "counts": {
+        "Red": 1,
+        "Amber": 1,
+        "Green": 2
+      },
+      "sprint_id": "sprint_09",
+      "sprint_goal": "Stabilize the notifications service and reduce P1 bug backlog",
+      "sprint_start": "2026-07-28",
+      "sprint_end": "2026-08-11",
+      "velocity": 24,
+      "at_risk_cards": [
+        {
+          "card_id": "BRAVO-102",
+          "title": "Notification service memory leak",
+          "status": "Red",
+          "reasons": [
+            "Active High-priority Issue: Notification service memory leak causing intermittent outages (I-003)",
+            "No reviewer assigned yet \u2014 review not requested"
+          ]
+        },
+        {
+          "card_id": "BRAVO-104",
+          "title": "Add SMS notification channel",
+          "status": "Amber",
+          "reasons": [
+            "No linked PR yet \u2014 work not started",
+            "Active Low-priority Assumption: Assuming Team Bravo's test environment will be ready by sprint start (A-002)"
+          ]
+        }
+      ]
+    },
+    {
+      "team_id": "team_charlie",
+      "team_name": "Team Charlie",
+      "status": "Red",
+      "counts": {
+        "Red": 1,
+        "Amber": 0,
+        "Green": 1
+      },
+      "sprint_id": "sprint_15",
+      "sprint_goal": "Migrate reporting dashboard to the new data pipeline",
+      "sprint_start": "2026-07-28",
+      "sprint_end": "2026-08-11",
+      "velocity": 18,
+      "at_risk_cards": [
+        {
+          "card_id": "CHAR-301",
+          "title": "Connect dashboard to new pipeline",
+          "status": "Red",
+          "reasons": [
+            "Merge conflict: mergeable_state is 'dirty'",
+            "Only 0 of 1 required approvals received",
+            "Review from Taylor Singh pending 4 day(s) (threshold 3)",
+            "Active Medium-priority Dependency: Reporting dashboard migration depends on Data Platform team's pipeline API (D-004)"
+          ]
+        }
+      ]
+    }
+  ],
+  "features": [
+    {
+      "feature_id": "FEAT-01",
+      "feature_name": "Account Settings & SSO",
+      "status": "Amber",
+      "reasons": [
+        "ALPHA-204 (Add SSO login option) is Amber"
+      ]
+    },
+    {
+      "feature_id": "FEAT-02",
+      "feature_name": "Payment Reliability",
+      "status": "Red",
+      "reasons": [
+        "Quality gate failed: 88% coverage, threshold 90%",
+        "Changes requested by a reviewer \u2014 PR blocked pending rework",
+        "PR updated on 2026-08-09 after the most recent approval on 2026-08-07 \u2014 needs re-review"
+      ]
+    },
+    {
+      "feature_id": "FEAT-03",
+      "feature_name": "Notifications Reliability",
+      "status": "Red",
+      "reasons": [
+        "BRAVO-102 (Notification service memory leak) is Red"
+      ]
+    },
+    {
+      "feature_id": "FEAT-04",
+      "feature_name": "Reporting & Data Pipeline Migration",
+      "status": "Red",
+      "reasons": [
+        "CHAR-301 (Connect dashboard to new pipeline) is Red"
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "card_id": "ALPHA-201",
+      "title": "Rebuild account-settings UI",
+      "team_id": "team_alpha",
+      "team_name": "Team Alpha",
+      "feature_id": "FEAT-01",
+      "priority": "high",
+      "story_points": 8,
+      "card_status": "done",
+      "status": "Green",
+      "reasons": [],
+      "pr_id": null,
+      "pr_state": null,
+      "pr_size": null,
+      "pr_split_suggestion": null,
+      "linked_risk_ids": []
+    },
+    {
+      "card_id": "ALPHA-202",
+      "title": "Payment retry queue logic",
+      "team_id": "team_alpha",
+      "team_name": "Team Alpha",
+      "feature_id": "FEAT-02",
+      "priority": "high",
+      "story_points": 13,
+      "card_status": "in_progress",
+      "status": "Red",
+      "reasons": [
+        "Quality gate failed: 88% coverage, threshold 90%",
+        "Changes requested by a reviewer \u2014 PR blocked pending rework",
+        "PR updated on 2026-08-09 after the most recent approval on 2026-08-07 \u2014 needs re-review"
+      ],
+      "pr_id": "PR-1001",
+      "pr_state": "Open",
+      "pr_size": "Medium",
+      "pr_split_suggestion": null,
+      "linked_risk_ids": []
+    },
+    {
+      "card_id": "ALPHA-203",
+      "title": "Fix avatar upload bug",
+      "team_id": "team_alpha",
+      "team_name": "Team Alpha",
+      "feature_id": "FEAT-01",
+      "priority": "medium",
+      "story_points": 3,
+      "card_status": "done",
+      "status": "Green",
+      "reasons": [],
+      "pr_id": null,
+      "pr_state": null,
+      "pr_size": null,
+      "pr_split_suggestion": null,
+      "linked_risk_ids": []
+    },
+    {
+      "card_id": "ALPHA-204",
+      "title": "Add SSO login option",
+      "team_id": "team_alpha",
+      "team_name": "Team Alpha",
+      "feature_id": "FEAT-01",
+      "priority": "high",
+      "story_points": 8,
+      "card_status": "in_progress",
+      "status": "Amber",
+      "reasons": [
+        "No linked PR yet \u2014 work not started",
+        "Active Medium-priority Risk: Vendor may not deliver API access before sprint 12 start (R-001)"
+      ],
+      "pr_id": null,
+      "pr_state": null,
+      "pr_size": null,
+      "pr_split_suggestion": null,
+      "linked_risk_ids": [
+        "R-001"
+      ]
+    },
+    {
+      "card_id": "BRAVO-101",
+      "title": "Fix duplicate push notifications",
+      "team_id": "team_bravo",
+      "team_name": "Team Bravo",
+      "feature_id": "FEAT-03",
+      "priority": "high",
+      "story_points": 5,
+      "card_status": "done",
+      "status": "Green",
+      "reasons": [],
+      "pr_id": null,
+      "pr_state": null,
+      "pr_size": null,
+      "pr_split_suggestion": null,
+      "linked_risk_ids": []
+    },
+    {
+      "card_id": "BRAVO-102",
+      "title": "Notification service memory leak",
+      "team_id": "team_bravo",
+      "team_name": "Team Bravo",
+      "feature_id": "FEAT-03",
+      "priority": "high",
+      "story_points": 8,
+      "card_status": "in_progress",
+      "status": "Red",
+      "reasons": [
+        "Active High-priority Issue: Notification service memory leak causing intermittent outages (I-003)",
+        "No reviewer assigned yet \u2014 review not requested"
+      ],
+      "pr_id": "PR-1002",
+      "pr_state": "Draft",
+      "pr_size": "Small",
+      "pr_split_suggestion": null,
+      "linked_risk_ids": [
+        "I-003"
+      ]
+    },
+    {
+      "card_id": "BRAVO-103",
+      "title": "Email digest formatting bug",
+      "team_id": "team_bravo",
+      "team_name": "Team Bravo",
+      "feature_id": "FEAT-03",
+      "priority": "medium",
+      "story_points": 3,
+      "card_status": "in_progress",
+      "status": "Green",
+      "reasons": [],
+      "pr_id": "PR-1003",
+      "pr_state": "Merged",
+      "pr_size": "Small",
+      "pr_split_suggestion": null,
+      "linked_risk_ids": []
+    },
+    {
+      "card_id": "BRAVO-104",
+      "title": "Add SMS notification channel",
+      "team_id": "team_bravo",
+      "team_name": "Team Bravo",
+      "feature_id": "FEAT-03",
+      "priority": "high",
+      "story_points": 8,
+      "card_status": "in_progress",
+      "status": "Amber",
+      "reasons": [
+        "No linked PR yet \u2014 work not started",
+        "Active Low-priority Assumption: Assuming Team Bravo's test environment will be ready by sprint start (A-002)"
+      ],
+      "pr_id": null,
+      "pr_state": null,
+      "pr_size": null,
+      "pr_split_suggestion": null,
+      "linked_risk_ids": [
+        "A-002"
+      ]
+    },
+    {
+      "card_id": "CHAR-301",
+      "title": "Connect dashboard to new pipeline",
+      "team_id": "team_charlie",
+      "team_name": "Team Charlie",
+      "feature_id": "FEAT-04",
+      "priority": "high",
+      "story_points": 8,
+      "card_status": "in_progress",
+      "status": "Red",
+      "reasons": [
+        "Merge conflict: mergeable_state is 'dirty'",
+        "Only 0 of 1 required approvals received",
+        "Review from Taylor Singh pending 4 day(s) (threshold 3)",
+        "Active Medium-priority Dependency: Reporting dashboard migration depends on Data Platform team's pipeline API (D-004)"
+      ],
+      "pr_id": "PR-1004",
+      "pr_state": "Open",
+      "pr_size": "Medium",
+      "pr_split_suggestion": null,
+      "linked_risk_ids": [
+        "D-004"
+      ]
+    },
+    {
+      "card_id": "CHAR-302",
+      "title": "Deprecate legacy reporting job",
+      "team_id": "team_charlie",
+      "team_name": "Team Charlie",
+      "feature_id": "FEAT-04",
+      "priority": "medium",
+      "story_points": 5,
+      "card_status": "done",
+      "status": "Green",
+      "reasons": [],
+      "pr_id": null,
+      "pr_state": null,
+      "pr_size": null,
+      "pr_split_suggestion": null,
+      "linked_risk_ids": []
+    }
+  ]
+}
